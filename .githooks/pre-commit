@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/bash
 echo "Pre-Commit Hook!"
 /usr/bin/env python3 .githooks/savetime.py
 git add version.py
