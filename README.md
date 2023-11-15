@@ -6,10 +6,11 @@
 
 #### 使用方法
 
-首次使用前，运行安装脚本。其中：
-
-- Windows运行[`.githooks/git-hooks-intsall.bat`](./.githooks/git-hooks-intsall.bat)（以管理员身份）；
-- Linux运行[`.githooks/git-hooks-intsall.sh`](./.githooks/git-hooks-intsall.sh)；
+1. 首次使用前，运行安装脚本。其中：
+   - Windows运行[`.githooks/git-hooks-intsall.bat`](./.githooks/git-hooks-intsall.bat)（以管理员身份）；
+   - Linux运行[`.githooks/git-hooks-intsall.sh`](./.githooks/git-hooks-intsall.sh)；
+2. 按照正常使用方法提交，`version.py`中的版本号会在提交时自动更新；
+3. 如果提交时不想自动更新则在`commit`命令中附加`--no-verify`参数。
 
 #### 移植
 
@@ -23,7 +24,7 @@
 
 #### 其他说明
 
-脚本中使用的Python 3.x运行命令为大多数Linux系统上使用的`python3`，但是Windows和部分Linux中Python 3.x运行命令为`python`而没有`python3`，因此需要手动修改[`.githooks/pre-commit`]((./.githooks/pre-commit))（并且不要提交）。
+脚本中使用的Python 3.x运行命令为大多数Linux系统上使用的`python3`，但是Windows和部分Linux中Python 3.x运行命令为`python`而没有`python3`，因此需要手动修改[`.githooks/pre-commit`](./.githooks/pre-commit)（并且不要提交）。
 
 #### 参考
 
