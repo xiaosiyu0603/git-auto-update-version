@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+echo "Pre-Commit Hook!"
+/usr/bin/env python3 .githooks/update.py
+git add version.py
